@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hendon.moodsy" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_moodsy"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.hendon.moodsy.HomeActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.hendon.moodsy.LogMoodActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_log_mood"
+            android:theme="@style/FullscreenTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hendon.moodsy.GraphActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_graph"
+            android:theme="@style/FullscreenTheme" >
+        </activity>
+        <receiver android:name="com.hendon.moodsy.notification.Alarm" android:exported="true">
+            <intent-filter>
+                <action android:name="com.hendon.moodsy.START_ALARM" >
+                </action>
+            </intent-filter>
+        </receiver>
+        <activity android:name=".BarPlotExampleActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

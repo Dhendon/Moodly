@@ -1,0 +1,7 @@
+<resources>
+    <color name="black_overlay">#66000000</color>
+    <color name="pleasant_yellow">#FFED90</color>
+    <color name="pleasant_green">#359668</color>
+    <color name="hard_yellow">#ffffa926</color>
+    <color name="hard_yellow_shadow">#ffaf5906</color>
+</resources>

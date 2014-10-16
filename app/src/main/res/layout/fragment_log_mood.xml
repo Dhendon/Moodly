@@ -1,0 +1,60 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCFFFF"
+    tools:context="com.hendon.moodsy.LogMoodActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <TextView android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:keepScreenOn="true"
+        android:textColor="#33b5e5"
+        android:textStyle="bold"
+        android:textSize="50sp"
+        android:gravity="center"
+        android:text="@string/mood_log"
+        android:paddingBottom="150dp" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBarMood"
+        android:layout_gravity="right|center_vertical"
+        android:rotation="270"
+        android:indeterminate="false"
+        android:paddingTop="300dp" />
+
+    <!-- android:background="#d3ffa926"
+        android:textColor="#fffefffd"
+        android:textSize="30sp"
+        android:layout_gravity="center_horizontal|bottom" /> -->
+
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/empty_string"
+        android:id="@+id/moodTextView"
+        android:layout_gravity="center"
+        android:paddingTop="150dp"
+        android:textSize="28sp"
+        android:textColor="#ffffffff"
+        android:textStyle="bold" />
+
+    <Button android:id="@+id/button_submit_mood"
+        android:background="@drawable/button_selector"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:paddingLeft="10dp"
+
+        android:text="@string/submit_mood_button"
+        android:layout_gravity="center_horizontal|bottom" />
+
+</FrameLayout>
